@@ -1,0 +1,32 @@
+.category {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 25vw));
+	justify-content: center;
+	place-items: center;
+	gap: 2vw;
+	div {
+		background-color: rgba(255, 255, 255, 0.354);
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 2%;
+		align-items: center;
+		a {
+			display: block;
+			text-align: center;
+			width: 100%;
+			font-size: 2vw;
+			font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+				sans-serif;
+			text-transform: uppercase;
+		}
+		h6 {
+			font-size: 1vw;
+			cursor: pointer;
+			transition: all 200ms linear;
+			&:hover {
+				font-size: 1.1vw;
+			}
+		}
+	}
+}
